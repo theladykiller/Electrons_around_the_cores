@@ -1,13 +1,16 @@
 function electrons_function() {}
 electrons_function.prototype.play_game = function(array) {
-	if(array){
-		if(array.length < 4){
-			return "Not enough dice thrown";
+	let result;
+	arrayfound : if(array){
+		if(array.length < 4){ //break if not enough dices in array
+			result = "Not enough dice thrown";
+			break arrayfound;
 		}
-		if(array.length > 6){
-			return "To many dice thrown";
+		if(array.length > 6){ //break if too many dices in array
+			result = "To many dice thrown";
+			break arrayfound;
 		}
-		let result = 0;
+		result = 0;
 		array.forEach(element => { 
 			if(element === 3){	//add 2 for a 3
 				result += 2;
@@ -15,7 +18,8 @@ electrons_function.prototype.play_game = function(array) {
 				result += 4;
 			}
 		});
-		return result;
+	}else{
+		result = "No dice thrown";
 	}
-	return "No dice thrown";
+	return result;
 };
