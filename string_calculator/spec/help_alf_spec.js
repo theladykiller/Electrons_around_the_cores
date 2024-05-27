@@ -19,4 +19,10 @@ describe('String Calculator', function() {
 		let array = [1,2,3,4,5,6];
 		expect(electrons.play_game(array)).toEqual(6);
 	});
+
+	//todo 4
+	it('should return "Not enough dice thrown" if array is: [1,2,3]', function() {
+		let array = [1,2,3];
+		expect(electrons.play_game(array)).toEqual("Not enough dice thrown");
+	});
 });
