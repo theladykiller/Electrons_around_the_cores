@@ -6,6 +6,6 @@
 
 4. [1,2,3] => "Not enough dice thrown"
 
-5. [1,4,3,6,2,3,5] => "To many dice thrown"
+5. [1,4,3,6,2,3,5] => "Too many dice thrown"
 
 6. [3,4,0,8] => "Dice not thrown correctly"

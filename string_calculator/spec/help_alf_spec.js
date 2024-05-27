@@ -27,9 +27,9 @@ describe('String Calculator', function() {
 	});
 
 	//todo 5
-	it('should return "To many dice thrown" if array is: [1,4,3,6,2,3,5]', function() {
+	it('should return "Too many dice thrown" if array is: [1,4,3,6,2,3,5]', function() {
 		let array = [1,4,3,6,2,3,5];
-		expect(electrons.play_game(array)).toEqual("To many dice thrown");
+		expect(electrons.play_game(array)).toEqual("Too many dice thrown");
 	});
 
 	//todo 6

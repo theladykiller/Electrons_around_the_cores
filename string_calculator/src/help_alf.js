@@ -2,12 +2,8 @@ function electrons_function() {}
 electrons_function.prototype.play_game = function(array) {
 	let result;
 	arrayfound : if(array){
-		if(array.length < 4){ //break if not enough dices in array
-			result = "Not enough dice thrown";
-			break arrayfound;
-		}
-		if(array.length > 6){ //break if too many dices in array
-			result = "To many dice thrown";
+		if (array.length < 4 || array.length > 6) { // Check if number of dices is out of the acceptable range
+			result = (array.length < 4) ? "Not enough dice thrown" : "Too many dice thrown";
 			break arrayfound;
 		}
 		result = 0;
