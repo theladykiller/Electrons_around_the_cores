@@ -31,4 +31,10 @@ describe('String Calculator', function() {
 		let array = [1,4,3,6,2,3,5];
 		expect(electrons.play_game(array)).toEqual("To many dice thrown");
 	});
+
+	//todo 6
+	it('should return "Dice not thrown correctly" if array is: [3,4,0,8]', function() {
+		let array = [3,4,0,8];
+		expect(electrons.play_game(array)).toEqual("Dice not thrown correctly");
+	});
 });
